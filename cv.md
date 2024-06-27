@@ -28,7 +28,7 @@ Currently I'm finishing big the online-course, doing final practice in web devel
 
 ## Technologies:
 
-HTML5, CSS3, SCSS, JavaScript Basics, BEM methodology, Gulp, Git, GitHub, VS Code, WebStorm, Figma
+HTML5, CSS3, SCSS, Sass, PUG, JavaScript, jQuery, BEM methodology, Gulp, Git, GitHub, VS Code, WebStorm, Figma
 
 
 
