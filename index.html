@@ -1,11 +1,317 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CV of frontend developer.</title>
+  <meta name="description" content="CV of frontend developer.">
+  <title>CV</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" href="./assets/favicon.ico">
+  <link rel="preload" href="./assets/fonts/Montserrat-Regular.woff2" type="font/woff2" as="font"
+    crossorigin="anonymous">
+  <link rel="preload" href="./assets/fonts/Montserrat-Medium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./assets/fonts/Montserrat-Bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./assets/fonts/Montserrat-Regular.woff" type="font/woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./assets/fonts/Montserrat-Medium.woff" type="font/woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./assets/fonts/Montserrat-Bold.woff" type="font/woff" as="font" crossorigin="anonymous">
 </head>
+
 <body>
-  <h1>CV фронтенд-разработчика Арутюнянц Людмилы</h1>
+  <div class="wrapper">
+    <header class="header" id="header">
+      <div class="container">
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#contacts" class="nav__link">Contacts</a>
+            </li>
+            <li class="nav__item">
+              <a href="#summary" class="nav__link">Summary</a>
+            </li>
+            <li class="nav__item">
+              <a href="#skills" class="nav__link">Skills</a>
+            </li>
+            <li class="nav__item">
+              <a href="#code" class="nav__link">Code</a>
+            </li>
+            <li class="nav__item">
+              <a href="#projects" class="nav__link">Projects</a>
+            </li>
+            <li class="nav__item">
+              <a href="#education" class="nav__link">Education</a>
+            </li>
+            <li class="nav__item">
+              <a href="#languages" class="nav__link">Languages</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="main">
+      <div class="container">
+        <section class="personal">
+          <div class="personal__image">
+            <img class="personal__img" src="./assets/img/avatar.jpg" alt="Photo of Mila Arutyunyants">
+          </div>
+          <div class="personal__content">
+            <h1>Lyudmila Arutyunyants</h1>
+            <p>Frontend developer</p>
+          </div>
+        </section>
+        <section class="contacts">
+          <h2>Contacts</h2>
+          <span class="anchor" id="contacts"></span>
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <a class="contacts__link contacts__link--gh" href="https://github.com/MilaRut">GitHub</a>
+            </li>
+            <li class="contacts__item">
+              <a class="contacts__link contacts__link--cp" href="https://codepen.io/milarut">CodePen</a>
+            </li>
+            <li class="contacts__item">
+              <a class="contacts__link contacts__link--gm" href="mailto:mila.balashova2312@gmail.com">Gmail</a>
+            </li>
+            <li class="contacts__item">
+              <a class="contacts__link contacts__link--tg" href="https://t.me/degusyanz">Telegram</a>
+            </li>
+            <li class="contacts__item">
+              <a class="contacts__link contacts__link--tel" href="+79111115764">+7 911 111 57 64</a>
+            </li>
+            <li class="contacts__item">
+              <p>Saint-Petersburg</p>
+            </li>
+          </ul>
+        </section>
+        <section class="summary" id="summary">
+          <h2>Briefly About Myself</h2>
+          <p>I have an extensive experience in different professional areas, first of all 5 years experience in IT-sales
+            and partner management.
+            As for my personal qualities I would mention that I'm self-motivated, adaptable, responsible, good team
+            worker
+            and have an eye for detail.
+            I am eager to learn and enjoy overcoming challenges. I also like to help my colleagues and newcomers and use
+            my pedagogical background to couch another people comprehensible and patiently.
+            In January 2022 I started studying front-end and I'm really in love with it.
+            Currently I'm finishing the big online-course, doing final practice in web development and also working on
+            some personal projects.</p>
+        </section>
+        <section class="skills">
+          <h2>Skills</h2>
+          <span class="anchor" id="skills"></span>
+          <ul class="skills__list">
+            <li class="skills__item">HTML5</li>
+            <li class="skills__item">CSS3</li>
+            <li class="skills__item">SCSS</li>
+            <li class="skills__item">JavaScript</li>
+            <li class="skills__item">jQuery</li>
+            <li class="skills__item">JS libs</li>
+            <li class="skills__item">Animations</li>
+            <li class="skills__item">Vue</li>
+            <li class="skills__item">BEM</li>
+            <li class="skills__item">Gulp</li>
+            <li class="skills__item">Git</li>
+            <li class="skills__item">GitHub</li>
+            <li class="skills__item">VS Code</li>
+            <li class="skills__item">Figma</li>
+            <li class="skills__item">Wordpress</li>
+          </ul>
+        </section>
+        <section class="code" id="code">
+          <h2>Code example</h2>
+          <h3>task:</h3>
+          <p>Write function bmi that calculates body mass index (bmi = weight / height2).</p>
+          <pre>
+if bmi &lt;= 18.5 return "Underweight"
+if bmi &lt;= 25.0 return "Normal"
+if bmi &lt;= 30.0 return "Overweight"
+if bmi &gt; 30 return "Obese"</pre>
+          <h3>solution:</h3>
+
+          <pre>
+function bmi(weight, height) {
+  let result = weight / height**2;
+
+  switch(true) {
+    case (result &lt;= 18.5):
+    return "Underweight";
+    break;
+
+    case (result &lt;= 25.0):
+    return "Normal";
+    break;
+
+    case (result &lt;= 30.0):
+    return "Overweight";
+    break;
+
+    case (result &gt; 30):
+    return "Obese";
+  }
+}
+          </pre>
+        </section>
+        <section class="projects" id="projects">
+          <h2>Projects</h2>
+          <ul class="projects__list">
+            <li class="projects__item">
+              <a class="projects__link" target="_blank" href="https://milarut.github.io/1864191-sedona-33">
+                <div class="projects__image">
+                  <img class="projects__img" src="./assets/img/sedona.jpg" alt="Website preview">
+                </div>
+                <h3>Sedona city</h3>
+                <span class="projects__tooltip" role="tooltip">click to open the project</span>
+              </a>
+              <a class="projects__link-source" href="https://github.com/MilaRut/1864191-sedona-33">&#8594; source code</a>
+            </li>
+            <li class="projects__item">
+              <a class="projects__link" target="_blank" href="https://milarut.github.io/1864191-mishka-25">
+                <div class="projects__image">
+                  <img class="projects__img" src="./assets/img/mishka.jpg" alt="Website preview">
+                </div>
+                <h3>Mishka</h3>
+                <span class="projects__tooltip" role="tooltip">click to open the project</span>
+              </a>
+              <a class="projects__link-source" href="https://github.com/MilaRut/1864191-mishka-25">&#8594; source code</a>
+            </li>
+            <li class="projects__item">
+              <a class="projects__link" target="_blank" href="https://milarut.github.io/drink2go">
+                <div class="projects__image">
+                  <img class="projects__img" src="./assets/img/drink2go.jpg" alt="Website preview">
+                </div>
+                <h3>Drink2Go</h3>
+                <span class="projects__tooltip" role="tooltip">click to open the project</span>
+              </a>
+              <a class="projects__link-source" href="https://github.com/MilaRut/drink2go">&#8594; source code</a>
+            </li>
+            <li class="projects__item">
+              <a class="projects__link" target="_blank" href="https://milarut.github.io/smart-device">
+                <div class="projects__image">
+                  <img class="projects__img" src="./assets/img/smartdevice.jpg" alt="Website preview">
+                </div>
+                <h3>Smart Device</h3>
+                <span class="projects__tooltip" role="tooltip">click to open the project</span>
+              </a>
+              <a class="projects__link-source" href="https://github.com/MilaRut/smart-device">&#8594; source code</a>
+            </li>
+            <li class="projects__item">
+              <a class="projects__link" target="_blank" href="https://milarut.github.io/antarctic-cruises">
+                <div class="projects__image">
+                  <img class="projects__img" src="./assets/img/cruises.jpg" alt="Website preview">
+                </div>
+                <h3>Antarctic Criuses</h3>
+                <span class="projects__tooltip" role="tooltip">click to open the project</span>
+              </a>
+              <a class="projects__link-source" href="https://github.com/MilaRut/antarctic-cruises">&#8594; source code</a>
+            </li>
+            <li class="projects__item">
+              <a class="projects__link" target="_blank" href="https://milarut.github.io/supergym/">
+                <div class="projects__image">
+                  <img class="projects__img" src="./assets/img/supergym.jpg" alt="Website preview">
+                </div>
+                <h3>SuperGym</h3>
+                <span class="projects__tooltip" role="tooltip">click to open the project</span>
+              </a>
+              <a class="projects__link-source" href="https://github.com/MilaRut/supergym">&#8594; source code</a>
+            </li>
+            <li class="projects__item">
+              <a class="projects__link" target="_blank" href="https://milarut.github.io/snake-game">
+                <div class="projects__image">
+                  <img class="projects__img" src="./assets/img/snake.jpg" alt="Website preview">
+                </div>
+                <h3>Snake Game</h3>
+                <span class="projects__tooltip" role="tooltip">click to open the project</span>
+              </a>
+              <a class="projects__link-source" href="https://github.com/MilaRut/snake-game">&#8594; source code</a>
+            </li>
+            <li class="projects__item">
+              <a class="projects__link" target="_blank" href="https://milarut.github.io/dragon-repeller/">
+                <div class="projects__image">
+                  <img class="projects__img" src="./assets/img/dragon-repeller.jpg" alt="Website preview">
+                </div>
+                <h3>Dragon Repeller Game</h3>
+                <span class="projects__tooltip" role="tooltip">click to open the project</span>
+              </a>
+              <a class="projects__link-source" href="https://github.com/MilaRut/dragon-repeller">&#8594; source code</a>
+            </li>
+          </ul>
+        </section>
+        <section class="education" id="education">
+          <h2>Education</h2>
+          <h3>Online-courses and trainings</h3>
+          <ul class="education__list">
+            <li class="education__item">2022 RS School JavaScript/Front-end. Stage 0</li>
+            <li class="education__item">2022-2023 HTML-Academy, Front-End Developement</li>
+            <li class="education__item">2022 freecodecamp, Responsive Web Design</li>
+            <li class="education__item">2022 ITlogia, UX/UI Start</li>
+            <li class="education__item">2022 ITlogia, Frontend Start</li>
+            <li class="education__item">2022 WayUp, Javascript: diving in</li>
+            <li class="education__item">2022 Netologia, Web Developement basics</li>
+            <li class="education__item">2022 Netologia, Figma basics</li>
+          </ul>
+
+          <h3>University</h3>
+          <ul class="education__list">
+            <li class="education__item">2002-2008 Rostov State University, romanic and germanic philology</li>
+          </ul>
+        </section>
+        <section class="languages" id="languages">
+          <h2>Languages</h2>
+
+          <p>studied English as the second foreign language at the university</p>
+          <p>used English as an internal businnes language during my mork at the iternational IT-company</p>
+
+          <table>
+            <tr>
+              <th>Language</th>
+              <th>Level</th>
+            </tr>
+            <tr>
+              <td>German</td>
+              <td>C1</td>
+            </tr>
+            <tr>
+              <td>English</td>
+              <td>B2</td>
+            </tr>
+            <tr>
+              <td>Spanish</td>
+              <td>A1</td>
+            </tr>
+            <tr>
+              <td>Russian</td>
+              <td>native</td>
+            </tr>
+          </table>
+        </section>
+      </div>
+      <a href="#header" class="main__up"></a>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a href="https://github.com/MilaRut" class="footer__link">
+              <img class="footer__img" src="./assets/img/github-mark.svg" alt="Логотип GitHub.">
+              <span>GitHub</span>
+            </a>
+          </li>
+          <li class="footer__item">
+            <a href="https://rs.school/js/" class="footer__link">
+              <div class="footer__img-wrapper">
+                <img class="footer__img" src="./assets/img/rs_school_js.svg" alt="Логотип RS School.">
+              </div>
+              <span>RS&nbsp;School</span>
+            </a>
+          </li>
+          <li class="footer__item">
+            <p class="footer__date">2024</p>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </div>
 </body>
+
 </html>
