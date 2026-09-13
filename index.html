@@ -25,28 +25,68 @@
         <nav class="nav">
           <ul class="nav__list">
             <li class="nav__item">
-              <a href="#contacts" class="nav__link" aria-label="Scroll to contacts">Contacts</a>
+              <a href="#contacts" class="nav__link" data-translate="contacts">Contacts</a>
             </li>
             <li class="nav__item">
-              <a href="#summary" class="nav__link" aria-label="Scroll to summary">Summary</a>
+              <a href="#summary" class="nav__link" data-translate="summary">Summary</a>
             </li>
             <li class="nav__item">
-              <a href="#skills" class="nav__link" aria-label="Scroll to skills">Skills</a>
+              <a href="#skills" class="nav__link" data-translate="skills">Skills</a>
             </li>
             <li class="nav__item">
-              <a href="#code" class="nav__link" aria-label="Scroll to code">Code</a>
+              <a href="#code" class="nav__link" data-translate="code">Code</a>
             </li>
             <li class="nav__item">
-              <a href="#projects" class="nav__link" aria-label="Scroll to projects">Projects</a>
+              <a href="#projects" class="nav__link" data-translate="projects">Projects</a>
             </li>
             <li class="nav__item">
-              <a href="#education" class="nav__link" aria-label="Scroll to education">Education</a>
+              <a href="#education" class="nav__link" data-translate="education">Education</a>
             </li>
             <li class="nav__item">
-              <a href="#languages" class="nav__link" aria-label="Scroll to languages">Languages</a>
+              <a href="#languages" class="nav__link" data-translate="languages">Languages</a>
             </li>
           </ul>
         </nav>
+        <div class="header__controls-wrapper">
+          <div class="lang-switcher">
+            <label class="lang-switcher__toggle">
+              <input type="checkbox" id="lang-switcher">
+              <span class="lang-switcher__btn-text">EN</span>
+            </label>
+            <div class="lang-switcher__list">
+              <button type="button" class="lang-switcher__btn" data-lang="ru">
+                <span class="lang-switcher__text">RU</span>
+              </button>
+              <button type="button" class="lang-switcher__btn" data-lang="en">
+                <span class="lang-switcher__text">EN</span>
+              </button>
+            </div>
+          </div>
+          <label class="header__theme-switcher">
+            <input type="checkbox" name="theme-switcher" id="theme-switcher" aria-label="Toggle dark theme">
+            <span class="moon">
+              <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M11.4599 21.7501C11.2899 21.7501 11.1199 21.7501 10.9499 21.7401C5.34995 21.4901 0.669948 16.9801 0.279948 11.4801C-0.0600516 6.76011 2.66995 2.35011 7.06995 0.500114C8.31995 -0.0198852 8.97995 0.380114 9.25995 0.670114C9.53995 0.950114 9.92995 1.60011 9.40995 2.79011C8.94995 3.85011 8.71995 4.98011 8.72995 6.14011C8.74995 10.5701 12.4299 14.3301 16.9199 14.5101C17.5699 14.5401 18.2099 14.4901 18.8299 14.3801C20.1499 14.1401 20.6999 14.6701 20.9099 15.0101C21.1199 15.3501 21.3599 16.0801 20.5599 17.1601C18.4399 20.0601 15.0699 21.7501 11.4599 21.7501ZM1.76995 11.3701C2.10995 16.1301 6.16995 20.0301 11.0099 20.2401C14.2999 20.4001 17.4199 18.9001 19.3399 16.2801C19.4899 16.0701 19.5599 15.9201 19.5899 15.8401C19.4999 15.8301 19.3399 15.8201 19.0899 15.8701C18.3599 16.0001 17.5999 16.0501 16.8499 16.0201C11.5699 15.8101 7.24995 11.3801 7.21995 6.16011C7.21995 4.78011 7.48995 3.45011 8.03995 2.20011C8.13995 1.98011 8.15995 1.83011 8.16995 1.75011C8.07995 1.75011 7.91995 1.77011 7.65995 1.88011C3.84995 3.48011 1.48995 7.30011 1.76995 11.3701Z"
+                  fill="#FAFAFA" />
+              </svg>
+            </span>
+            <span class="sun">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M12 19.25C8 19.25 4.75 16 4.75 12C4.75 8 8 4.75 12 4.75C16 4.75 19.25 8 19.25 12C19.25 16 16 19.25 12 19.25ZM12 6.25C8.83 6.25 6.25 8.83 6.25 12C6.25 15.17 8.83 17.75 12 17.75C15.17 17.75 17.75 15.17 17.75 12C17.75 8.83 15.17 6.25 12 6.25Z"
+                  fill="#FAFAFA" />
+                <path
+                  d="M12 22.96C11.45 22.96 11 22.55 11 22V21.92C11 21.37 11.45 20.92 12 20.92C12.55 20.92 13 21.37 13 21.92C13 22.47 12.55 22.96 12 22.96ZM19.14 20.14C18.88 20.14 18.63 20.04 18.43 19.85L18.3 19.72C17.91 19.33 17.91 18.7 18.3 18.31C18.69 17.92 19.32 17.92 19.71 18.31L19.84 18.44C20.23 18.83 20.23 19.46 19.84 19.85C19.65 20.04 19.4 20.14 19.14 20.14ZM4.86 20.14C4.6 20.14 4.35 20.04 4.15 19.85C3.76 19.46 3.76 18.83 4.15 18.44L4.28 18.31C4.67 17.92 5.3 17.92 5.69 18.31C6.08 18.7 6.08 19.33 5.69 19.72L5.56 19.85C5.37 20.04 5.11 20.14 4.86 20.14ZM22 13H21.92C21.37 13 20.92 12.55 20.92 12C20.92 11.45 21.37 11 21.92 11C22.47 11 22.96 11.45 22.96 12C22.96 12.55 22.55 13 22 13ZM2.08 13H2C1.45 13 1 12.55 1 12C1 11.45 1.45 11 2 11C2.55 11 3.04 11.45 3.04 12C3.04 12.55 2.63 13 2.08 13ZM19.01 5.99C18.75 5.99 18.5 5.89 18.3 5.7C17.91 5.31 17.91 4.68 18.3 4.29L18.43 4.16C18.82 3.77 19.45 3.77 19.84 4.16C20.23 4.55 20.23 5.18 19.84 5.57L19.71 5.7C19.52 5.89 19.27 5.99 19.01 5.99ZM4.99 5.99C4.73 5.99 4.48 5.89 4.28 5.7L4.15 5.56C3.76 5.17 3.76 4.54 4.15 4.15C4.54 3.76 5.17 3.76 5.56 4.15L5.69 4.28C6.08 4.67 6.08 5.3 5.69 5.69C5.5 5.89 5.24 5.99 4.99 5.99ZM12 3.04C11.45 3.04 11 2.63 11 2.08V2C11 1.45 11.45 1 12 1C12.55 1 13 1.45 13 2C13 2.55 12.55 3.04 12 3.04Z"
+                  fill="#FAFAFA" />
+              </svg>
+            </span>
+          </label>
+        </div>
+        <label for="menu-toggle" class="header__menu-label">
+          <input type="checkbox" id="menu-toggle" class="header__menu-toggle" aria-label="Open/close menu">
+          <span class="header__menu-icon"></span>
+        </label>
       </div>
     </header>
     <main class="main">
@@ -56,48 +96,51 @@
             <img class="personal__img" src="./assets/img/avatar.jpg" alt="Photo of Mila Arutyunyants">
           </div>
           <div class="personal__content">
-            <h1>Lyudmila Arutyunyants</h1>
-            <p>Frontend developer</p>
+            <h1 data-translate="name">Lyudmila Arutyunyants</h1>
+            <p data-translate="position">Frontend developer</p>
           </div>
         </section>
         <section class="contacts">
-          <h2>Contacts</h2>
+          <h2 data-translate="contacts">Contacts</h2>
           <span class="anchor" id="contacts"></span>
           <ul class="contacts__list">
             <li class="contacts__item">
-              <a class="contacts__link contacts__link--gh" href="https://github.com/MilaRut">GitHub</a>
+              <a class="contacts__link contacts__link--gh" href="https://github.com/MilaRut" target="_blank"
+                rel="noopener noreferrer">GitHub</a>
             </li>
             <li class="contacts__item">
-              <a class="contacts__link contacts__link--cp" href="https://codepen.io/milarut">CodePen</a>
+              <a class="contacts__link contacts__link--cp" href="https://codepen.io/milarut" target="_blank"
+                rel="noopener noreferrer">CodePen</a>
             </li>
             <li class="contacts__item">
-              <a class="contacts__link contacts__link--gm" href="mailto:mila.balashova2312@gmail.com">Gmail</a>
+              <a class="contacts__link contacts__link--gm" href="mailto:milarut.dev@gmail.com">milarut.dev@gmail.com</a>
             </li>
             <li class="contacts__item">
-              <a class="contacts__link contacts__link--tg" href="https://t.me/degusyanz">Telegram</a>
+              <a class="contacts__link contacts__link--tg" href="https://t.me/degusyanz" target="_blank"
+                rel="noopener noreferrer">Telegram</a>
             </li>
             <li class="contacts__item">
-              <a class="contacts__link contacts__link--tel" href="+79111115764">+7 911 111 57 64</a>
+              <a class="contacts__link contacts__link--tel" href="tel:+79111115764">+7 911 111 57 64</a>
             </li>
             <li class="contacts__item">
-              <p>Saint-Petersburg</p>
+              <p data-translate="location">Saint-Petersburg</p>
             </li>
           </ul>
         </section>
         <section class="summary" id="summary">
-          <h2>Briefly About Myself</h2>
-          <p>I have an extensive experience in different professional areas, first of all 5 years experience in IT-sales
-            and partner management at the international IT-company. As for my personal qualities I would mention that
-            I'm self-motivated, adaptable, responsible, good team worker and have an eye for detail. I am eager to learn
-            and enjoy overcoming challenges. I also like to help my colleagues and newcomers and use my pedagogical
-            background to couch another people comprehensible and patiently.</p>
-
-          <p>In December 2021 I started studying front-end developement and I'm really in love with it. In January 2023
-            I've finished the big online-course at HTML Academy. Currently I continue studying new technologies and work
-            as outsource web-developer on some commercial and personal projects.</p>
+          <h2 data-translate="summary_title">Briefly About Myself</h2>
+          <p data-translate="summary_text_1">I have extensive experience across different professional areas, including
+            5 years in IT sales and partner management at an international IT company. My key strengths are
+            self-motivation, adaptability, responsibility, teamwork, and attention to detail. I am eager to learn and
+            thrive on challenges. I also enjoy helping colleagues and newcomers, and I use my pedagogical background to
+            coach others clearly and patiently.</p>
+          <p data-translate="summary_text_2">In December 2021, I started studying front-end development and became truly
+            passionate about it. In January 2023, I completed a comprehensive online course with HTML Academy.
+            Currently, I continue to learn new technologies and work as a freelance web developer on several commercial
+            and personal projects.</p>
         </section>
         <section class="skills">
-          <h2>Skills</h2>
+          <h2 data-translate="skills">Skills</h2>
           <span class="anchor" id="skills"></span>
           <ul class="skills__list">
             <li class="skills__item">HTML5</li>
@@ -118,15 +161,15 @@
           </ul>
         </section>
         <section class="code" id="code">
-          <h2>Code example</h2>
-          <h3>task:</h3>
-          <p>Write function bmi that calculates body mass index (bmi = weight / height2).</p>
+          <h2 data-translate="code_title">Code example</h2>
+          <h3 data-translate="task">task:</h3>
+          <p data-translate="task_text">Write function bmi that calculates body mass index (bmi = weight / height2).</p>
           <pre>
 if bmi &lt;= 18.5 return "Underweight"
 if bmi &lt;= 25.0 return "Normal"
 if bmi &lt;= 30.0 return "Overweight"
 if bmi &gt; 30 return "Obese"</pre>
-          <h3>solution:</h3>
+          <h3 data-translate="solution">solution:</h3>
 
           <pre>
 function bmi(weight, height) {
@@ -152,96 +195,120 @@ function bmi(weight, height) {
           </pre>
         </section>
         <section class="projects" id="projects">
-          <h2>Projects</h2>
+          <h2 data-translate="projects">Projects</h2>
           <ul class="projects__list">
             <li class="projects__item">
-              <a class="projects__link" target="_blank" href="https://milarut.github.io/1864191-sedona-33">
+              <a class="projects__link" target="_blank" rel="noopener noreferrer"
+                href="https://milarut.github.io/1864191-sedona-33">
                 <div class="projects__image">
                   <img class="projects__img" src="./assets/img/sedona.jpg" alt="Website preview.">
                 </div>
                 <h3>Sedona city</h3>
-                <span class="projects__tooltip" role="tooltip">click to open the project</span>
+                <span class="projects__tooltip" role="tooltip" data-translate="projects_tooltip">click to open the
+                  project</span>
               </a>
-              <a class="projects__link-source" href="https://github.com/MilaRut/1864191-sedona-33">&#8594; source
+              <a class="projects__link-source" href="https://github.com/MilaRut/1864191-sedona-33"
+                data-translate="projects_source">→ source
                 code</a>
             </li>
             <li class="projects__item">
-              <a class="projects__link" target="_blank" href="https://milarut.github.io/1864191-mishka-25">
+              <a class="projects__link" target="_blank" rel="noopener noreferrer"
+                href="https://milarut.github.io/1864191-mishka-25">
                 <div class="projects__image">
                   <img class="projects__img" src="./assets/img/mishka.jpg" alt="Website preview.">
                 </div>
                 <h3>Mishka</h3>
-                <span class="projects__tooltip" role="tooltip">click to open the project</span>
+                <span class="projects__tooltip" role="tooltip" data-translate="projects_tooltip">click to open the
+                  project</span>
               </a>
-              <a class="projects__link-source" href="https://github.com/MilaRut/1864191-mishka-25">&#8594; source
+              <a class="projects__link-source" href="https://github.com/MilaRut/1864191-mishka-25"
+                data-translate="projects_source">→ source
                 code</a>
             </li>
             <li class="projects__item">
-              <a class="projects__link" target="_blank" href="https://milarut.github.io/drink2go">
+              <a class="projects__link" target="_blank" rel="noopener noreferrer"
+                href="https://milarut.github.io/drink2go">
                 <div class="projects__image">
                   <img class="projects__img" src="./assets/img/drink2go.jpg" alt="Website preview.">
                 </div>
                 <h3>Drink2Go</h3>
-                <span class="projects__tooltip" role="tooltip">click to open the project</span>
+                <span class="projects__tooltip" role="tooltip" data-translate="projects_tooltip">click to open the
+                  project</span>
               </a>
-              <a class="projects__link-source" href="https://github.com/MilaRut/drink2go">&#8594; source code</a>
+              <a class="projects__link-source" href="https://github.com/MilaRut/drink2go"
+                data-translate="projects_source">→ source code</a>
             </li>
             <li class="projects__item">
-              <a class="projects__link" target="_blank" href="https://milarut.github.io/smart-device">
+              <a class="projects__link" target="_blank" rel="noopener noreferrer"
+                href="https://milarut.github.io/smart-device">
                 <div class="projects__image">
                   <img class="projects__img" src="./assets/img/smartdevice.jpg" alt="Website preview.">
                 </div>
                 <h3>Smart Device</h3>
-                <span class="projects__tooltip" role="tooltip">click to open the project</span>
+                <span class="projects__tooltip" role="tooltip" data-translate="projects_tooltip">click to open the
+                  project</span>
               </a>
-              <a class="projects__link-source" href="https://github.com/MilaRut/smart-device">&#8594; source code</a>
+              <a class="projects__link-source" href="https://github.com/MilaRut/smart-device"
+                data-translate="projects_source">→ source code</a>
             </li>
             <li class="projects__item">
-              <a class="projects__link" target="_blank" href="https://milarut.github.io/antarctic-cruises">
+              <a class="projects__link" target="_blank" rel="noopener noreferrer"
+                href="https://milarut.github.io/antarctic-cruises">
                 <div class="projects__image">
                   <img class="projects__img" src="./assets/img/cruises.jpg" alt="Website preview.">
                 </div>
                 <h3>Antarctic Criuses</h3>
-                <span class="projects__tooltip" role="tooltip">click to open the project</span>
+                <span class="projects__tooltip" role="tooltip" data-translate="projects_tooltip">click to open the
+                  project</span>
               </a>
-              <a class="projects__link-source" href="https://github.com/MilaRut/antarctic-cruises">&#8594; source
+              <a class="projects__link-source" href="https://github.com/MilaRut/antarctic-cruises"
+                data-translate="projects_source">→ source
                 code</a>
             </li>
             <li class="projects__item">
-              <a class="projects__link" target="_blank" href="https://milarut.github.io/supergym/">
+              <a class="projects__link" target="_blank" rel="noopener noreferrer"
+                href="https://milarut.github.io/supergym/">
                 <div class="projects__image">
                   <img class="projects__img" src="./assets/img/supergym.jpg" alt="Website preview.">
                 </div>
                 <h3>SuperGym</h3>
-                <span class="projects__tooltip" role="tooltip">click to open the project</span>
+                <span class="projects__tooltip" role="tooltip" data-translate="projects_tooltip">click to open the
+                  project</span>
               </a>
-              <a class="projects__link-source" href="https://github.com/MilaRut/supergym">&#8594; source code</a>
+              <a class="projects__link-source" href="https://github.com/MilaRut/supergym"
+                data-translate="projects_source">→ source code</a>
             </li>
             <li class="projects__item">
-              <a class="projects__link" target="_blank" href="https://milarut.github.io/snake-game">
+              <a class="projects__link" target="_blank" rel="noopener noreferrer"
+                href="https://milarut.github.io/snake-game">
                 <div class="projects__image">
                   <img class="projects__img" src="./assets/img/snake.jpg" alt="Website preview.">
                 </div>
                 <h3>Snake Game</h3>
-                <span class="projects__tooltip" role="tooltip">click to open the project</span>
+                <span class="projects__tooltip" role="tooltip" data-translate="projects_tooltip">click to open the
+                  project</span>
               </a>
-              <a class="projects__link-source" href="https://github.com/MilaRut/snake-game">&#8594; source code</a>
+              <a class="projects__link-source" href="https://github.com/MilaRut/snake-game"
+                data-translate="projects_source">→ source code</a>
             </li>
             <li class="projects__item">
-              <a class="projects__link" target="_blank" href="https://milarut.github.io/dragon-repeller/">
+              <a class="projects__link" target="_blank" rel="noopener noreferrer"
+                href="https://milarut.github.io/dragon-repeller/">
                 <div class="projects__image">
                   <img class="projects__img" src="./assets/img/dragon-repeller.jpg" alt="Website preview.">
                 </div>
                 <h3>Dragon Repeller Game</h3>
-                <span class="projects__tooltip" role="tooltip">click to open the project</span>
+                <span class="projects__tooltip" role="tooltip" data-translate="projects_tooltip">click to open the
+                  project</span>
               </a>
-              <a class="projects__link-source" href="https://github.com/MilaRut/dragon-repeller">&#8594; source code</a>
+              <a class="projects__link-source" href="https://github.com/MilaRut/dragon-repeller"
+                data-translate="projects_source">→ source code</a>
             </li>
           </ul>
         </section>
         <section class="education" id="education">
-          <h2>Education</h2>
-          <h3>Online-courses and trainings</h3>
+          <h2 data-translate="education">Education</h2>
+          <h3 data-translate="education_online_courses">Online-courses and trainings</h3>
           <ul class="education__list">
             <li class="education__item">2024 RS School, JS/FE Pre-School</li>
             <li class="education__item">2022-2023 HTML-Academy, Front-End Developement</li>
@@ -253,67 +320,74 @@ function bmi(weight, height) {
             <li class="education__item">2022 Netologia, Figma basics</li>
           </ul>
 
-          <h3>University</h3>
+          <h3 data-translate="university">University</h3>
           <ul class="education__list">
-            <li class="education__item">2002-2008 Rostov State University, romanic and germanic philology</li>
+            <li class="education__item" data-translate="university_item">2002-2008 Rostov State University, romanic and
+              germanic philology</li>
           </ul>
         </section>
         <section class="languages" id="languages">
-          <h2>Languages</h2>
+          <h2 data-translate="languages">Languages</h2>
 
-          <p>studied English as the second foreign language at the university</p>
-          <p>used English as an internal businnes language during my mork at the iternational IT-company</p>
+          <p data-translate="languages_text_1">studied English as the second foreign language at the university</p>
+          <p data-translate="languages_text_2">used English as an internal businnes language during my mork at the
+            iternational IT-company</p>
 
           <table>
             <tbody>
               <tr>
-                <th scope="col">Language</th>
-                <th scope="col">Level</th>
+                <th scope="col" data-translate="languages_language">Language</th>
+                <th scope="col" data-translate="languages_level">Level</th>
               </tr>
               <tr>
-                <td>German</td>
+                <td data-translate="languages_german">German</td>
                 <td>C1</td>
               </tr>
               <tr>
-                <td>English</td>
+                <td data-translate="languages_english">English</td>
                 <td>B2</td>
               </tr>
               <tr>
-                <td>Spanish</td>
+                <td data-translate="languages_spanish">Spanish</td>
                 <td>A1</td>
               </tr>
               <tr>
-                <td>Russian</td>
+                <td data-translate="languages_russian">Russian</td>
                 <td>native</td>
               </tr>
             </tbody>
           </table>
         </section>
       </div>
-      <a href="#header" aria-label="Scroll to the top" class="main__up"></a>
+      <button type="button" aria-label="Scroll to the top" class="main__up" title="Scroll to the top"></button>
     </main>
     <footer class="footer">
       <div class="container">
         <ul class="footer__list">
           <li class="footer__item">
-            <a href="https://github.com/MilaRut" class="footer__link">
+            <a href="https://github.com/MilaRut" class="footer__link" target="_blank" rel="noopener noreferrer">
               <img class="footer__img" src="./assets/img/github-mark.svg" alt="GitHub.">
               <span>GitHub</span>
             </a>
           </li>
           <li class="footer__item">
-            <a href="https://rs.school/js/" class="footer__link">
+            <a href="https://rs.school/courses/javascript" class="footer__link" target="_blank"
+              rel="noopener noreferrer">
               <div class="footer__img-wrapper">
                 <img class="footer__img" src="./assets/img/rs_school_js.svg" alt="RS School.">
               </div>
             </a>
           </li>
           <li class="footer__item">
-            <p class="footer__date">2024</p>
+            <p class="footer__date">2026</p>
           </li>
         </ul>
       </div>
     </footer>
   </div>
+
+  <script src="./script.js" defer></script>
+
 </body>
+
 </html>
