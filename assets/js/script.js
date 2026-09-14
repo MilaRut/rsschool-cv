@@ -8,7 +8,6 @@ document.addEventListener('click', (e) => {
 });
 
 // Localization
-
 const switchElements = document.querySelectorAll('[data-lang]');
 
 function loadLanguage(lang) {
@@ -49,7 +48,6 @@ function translatePage(data) {
 }
 
 // Top button
-
 const toTopBtn = document.querySelector('.main__up');
 
 function scrollToTop() {
@@ -72,7 +70,6 @@ function showButton() {
     }
   });
 }
-
 
 document.addEventListener('DOMContentLoaded', () => {
   const defaultLang = 'en';

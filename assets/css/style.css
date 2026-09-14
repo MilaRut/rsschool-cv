@@ -6,8 +6,8 @@
   font-family: "Montserrat";
   font-display: swap;
   src:
-    url("../assets/fonts/Montserrat-Regular.woff2") format("woff2"),
-    url("../assets/fonts/Montserrat-Regular..woff") format("woff");
+    url("../fonts/Montserrat-Regular.woff2") format("woff2"),
+    url("../fonts/Montserrat-Regular..woff") format("woff");
 }
 
 @font-face {
@@ -16,8 +16,8 @@
   font-family: "Montserrat";
   font-display: swap;
   src:
-    url("../assets/fonts/Montserrat-Medium.woff2") format("woff2"),
-    url("../assets/fonts/Montserrat-Medium.woff") format("woff");
+    url("../fonts/Montserrat-Medium.woff2") format("woff2"),
+    url("../fonts/Montserrat-Medium.woff") format("woff");
 }
 
 @font-face {
@@ -26,8 +26,8 @@
   font-family: "Montserrat";
   font-display: swap;
   src:
-    url("../assets/fonts/Montserrat-Bold.woff2") format("woff2"),
-    url("../assets/fonts/Montserrat-Bold.woff") format("woff");
+    url("../fonts/Montserrat-Bold.woff2") format("woff2"),
+    url("../fonts/Montserrat-Bold.woff") format("woff");
 }
 
 /* Utils and normalize */
@@ -97,7 +97,7 @@ button {
   right: 50px;
   width: 60px;
   height: 60px;
-  background: #a7a7a7 url("./assets/img/arrow.svg") center no-repeat;
+  background: #a7a7a7 url("../img/arrow.svg") center no-repeat;
   border: none;
   border-radius: 50%;
   transition: transform 0.3s ease;
@@ -490,28 +490,28 @@ body:has(#theme-switcher:checked) .footer {
 }
 
 .contacts__link--gh::before {
-  background-image: url("./assets/img/github-white.svg");
+  background-image: url("../img/github-white.svg");
   background-size: cover;
 }
 
 .contacts__link--cp::before {
-  background-image: url("./assets/img/codepen.svg");
+  background-image: url("../img/codepen.svg");
 }
 
 .contacts__link--gm::before {
-  background-image: url("./assets/img/email.svg");
+  background-image: url("../img/email.svg");
 }
 
 .contacts__link--tg::before {
-  background-image: url("./assets/img/telegram.svg");
+  background-image: url("../img/telegram.svg");
 }
 
 .contacts__link--tel::before {
-  background-image: url("./assets/img/tel.svg");
+  background-image: url("../img/tel.svg");
 }
 
 .contacts__item p::before {
-  background-image: url("./assets/img/map-pin.svg");
+  background-image: url("../img/map-pin.svg");
 }
 
 .summary {
@@ -672,10 +672,11 @@ body:has(#theme-switcher:checked) .footer {
   height: 100%;
   object-fit: cover;
   transition: 0.3s;
+  filter: brightness(0.9);
 }
 
 .projects__link:hover .projects__img {
-  opacity: 0.6;
+  filter: brightness(1);
 }
 
 .projects__tooltip {
