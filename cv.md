@@ -9,28 +9,24 @@
 
 ## Contact information:
 
-* [GitHub:](https://github.com/MilaRut)
-* [CodePen:](https://codepen.io/milarut)
-* [Email:](mailto:mila.balashova2312@gmail.com)
-* [Telegram:](https://t.me/degusyanz)
-
-
+* [GitHub](https://github.com/MilaRut)
+* [CodePen](https://codepen.io/milarut)
+* [Email](mailto:mila.balashova2312@gmail.com)
+* [Telegram](https://t.me/degusyanz)
 
 ## Briefly About Myself:
 
-I have an extensive experience in different professional areas, first of all 5 years experience in IT-sales and partner management. 
-As for my personal qualities I would mention that I'm self-motivated, adaptable, responsible, good team worker and have an eye for detail. 
-I am eager to learn and enjoy overcoming challenges. I also like to help my colleagues and newcomers and use my pedagogical background to couch another people comprehensible and patiently.
-In January 2022 I started studying Frontend and I'm really in love with it. 
-Currently I'm finishing big the online-course, doing final practice in web developement and also working at some personal projects.
+I have extensive experience across different professional areas, including 5 years in IT sales and partner management at an international IT company. My key strengths are self-motivation, adaptability, responsibility, teamwork, and attention to detail. I am eager to learn and thrive on challenges. I also enjoy helping colleagues and newcomers, and I use my pedagogical background to
+coach others clearly and patiently.
 
-
+In December 2021, I started studying front-end development and became truly
+passionate about it. In January 2023, I completed a comprehensive online course with HTML Academy.
+Currently, I continue to learn new technologies and work as a freelance web developer on several commercial
+and personal projects.
 
 ## Technologies:
 
-HTML5, CSS3, SCSS, Sass, PUG, JavaScript, jQuery, BEM methodology, Gulp, Git, GitHub, VS Code, WebStorm, Figma
-
-
+HTML5, CSS3, SCSS, Sass, PUG, JavaScript, jQuery, JS libs, BEM methodology, Animations, Gulp, Vue, Gulp, Git, GitHub, VS Code, Figma, Wordpress
 
 ## Code exaple:
 
@@ -51,99 +47,82 @@ if bmi > 30 return "Obese"
 ```
 function bmi(weight, height) {
   let result = weight / height**2;
-  
+
   switch(true) {
       case (result<=18.5):
       return "Underweight";
       break;
-      
+
       case (result<=25.0):
       return "Normal";
       break;
-      
+
       case (result<=30.0):
       return "Overweight";
       break;
-      
+
       case (result>30):
       return "Obese";
       }
   }
-  ```
-
-
+```
 
 ## Frontend Experience:
 
-* My first study project, website of the Sedona city. 
-
-Fixed web design. HTML5, CSS3.
-
-[Code](https://github.com/MilaRut/1864191-sedona-33)
-[Result](https://milarut.github.io/1864191-sedona-33)
-
-
-* Second study project, website for online-shop Mishka. 
+- Study project, Mishka.
 
 Adaptive web design. HTML5, SCSS, JavaScript, Gulp.
 
-[Code](https://github.com/MilaRut/1864191-mishka-25)
-[Result](https://milarut.github.io/1864191-mishka-25)
+[View project](https://milarut.github.io/1864191-mishka-25)
 
-
-* Study project, landing page of the online-shop Drink2Go. 
+- Study project, Drink2Go.
 
 Adaptive web design. HTML5, SCSS, JavaScript, Gulp.
 
-[Code](https://github.com/MilaRut/drink2go)
-[Result](https://milarut.github.io/drink2go)
+[View project](https://milarut.github.io/drink2go)
 
+- Study project, Shelter.
 
-* Study project, landing page of the tech company Smart Device. 
+Adaptive web design. HTML5, SCSS, JavaScript.
 
-Adaptive web design. HTML5, SCSS, JavaScript, Gulp.
+[View project](https://milarut.github.io/rss-1/shelter)
 
-[Code](https://github.com/MilaRut/smart-device)
-[Result](https://milarut.github.io/smart-device)
+- Study project, Christmas Shop.
 
+Adaptive web design. HTML5, SCSS, JavaScript.
 
-* Study project, landing page of the cruises company Antarctic Criuses. 
+[View project](https://milarut.github.io/rss-2/christmas-shop/home.html)
 
-Adaptive, responsive webdesign. HTML5, SCSS, JavaScript, Gulp. 
+- Study project, Portfolio.
 
-[Code](https://github.com/MilaRut/antarctic-cruises)
-[Result](https://milarut.github.io/antarctic-cruises/)
+Adaptive web design. HTML5, SCSS, JavaScript.
 
+[View project](https://milarut.github.io/portfolio-photographer/)
 
-* Simple Snake Game. 
+- Study project, Dragon Repeller Game.
 
-Javascript, Canvas
+Adaptive web design. HTML5, SCSS, JavaScript.
 
-[Code](https://github.com/MilaRut/snake-game)
-[Result](https://milarut.github.io/snake-game)
+[View project](https://milarut.github.io/dragon-repeller/)
 
-* Demo for parallax effect, Fairy Forest.
+- Study project, Image Gallery.
 
-Adaptive, responsive webdesign. HTML5, SCSS, JavaScript, GSAP.
+Adaptive web design. HTML5, SCSS, JavaScript, REST API.
 
-[Code](https://github.com/MilaRut/parallax-scrolling)
-[Result](https://milarut.github.io/parallax-scrolling)
+[View project](https://milarut.github.io/rss-1/image-gallery/)
 
+- Study project, Audio Player.
 
-* Demo for swiper, Hoodie Mantle 3D Showcase.
+Adaptive web design. HTML5, SCSS, JavaScript.
 
-HTML5, SCSS, JavaScript, Swiper, Bootstrap.
-
-[Code](https://github.com/MilaRut/showcase-3D-effect)
-[Result](https://milarut.github.io/showcase-3D-effect)
-
+[View project](https://milarut.github.io/audio/)
 
 
 ## Education:
 
 ### Online-courses and trainings:
 
-* 2022 RS School JavaScript/Front-end. Stage 0
+* 2024 RS School, JS/FE Pre-School
 * 2022-2023 HTML-Academy, Front-End Developement
 * 2022 freecodecamp, Responsive Web Design
 * 2022 ITlogia, UX/UI Start
@@ -155,8 +134,6 @@ HTML5, SCSS, JavaScript, Swiper, Bootstrap.
 ### University:
 
 * 2002-2008 Rostov State University, romanic and germanic philology
-
-
 
 ## Languages:
 
